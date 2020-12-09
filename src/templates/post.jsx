@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import { Listing, Wrapper, SliceZone, Title, SEO, Header } from '../components'
+import { Listing, Wrapper, SliceZone, Title, SEO } from '../components'
 import Categories from '../components/Listing/Categories'
 import website from '../../config/website'
 import { LocaleContext } from '../components/Layout'
@@ -49,7 +49,6 @@ const Post = ({ data: { prismicPost, posts }, location, pageContext: { locale } 
       />
       <Hero>
         <Wrapper>
-          <Header />
           <Headline>
             {data.date} — {categories && <Categories categories={categories} />}
           </Headline>

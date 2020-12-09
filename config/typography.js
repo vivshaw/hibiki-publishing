@@ -8,7 +8,7 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [
-    'Lora',
+    'Futura PT',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -21,7 +21,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   bodyFontFamily: [
-    'Lora',
+    'Futura PT',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import { Global, css } from '@emotion/core'
-import { Listing, Wrapper, Title, SEO, Header } from '../components'
+import { Listing, Wrapper, Title, SEO } from '../components'
 import website from '../../config/website'
 import { LocaleContext } from '../components/Layout'
 import LocalizedLink from '../components/LocalizedLink'
@@ -60,7 +60,6 @@ const Category = ({
       />
       <Hero>
         <Wrapper>
-          <Header invert />
           <Headline>{i18n.category}</Headline>
           <h1>{category}</h1>
         </Wrapper>
