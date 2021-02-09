@@ -1,30 +1,10 @@
 // Colors
-$black: #2d2828;
-$lightGrey: rgba(0, 0, 0, 0.1);
-$darkGrey: rgba(0, 0, 0, 0.8);
-$primaryColor: #0027ec;
+$black: #111;
 
 // Transitions
 $transMed: 0.3s;
 
 // Typography
-$sansSerif: 'Lato', sans-serif;
-$serif: 'Playfair Display', serif;
+$sans: 'Futura PT', sans;
 $mono: 'IBM Plex Mono', monospace;
 $regular: 400;
-$medium: 500;
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $serif;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: $regular;
-}

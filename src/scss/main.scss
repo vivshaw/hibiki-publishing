@@ -4,12 +4,12 @@
   --heavyWeight: 900;
   --transMed: 0.3s;
   --transSlow: 0.5s;
-  --black: #111;
+  --black: $black;
   --charcoal: #3e3e3e;
-  --primaryColor: #939393;
-  --hibikiGreen: #29cf7f;
-  --serif: 'Playfair Display', serif;
-  --sans: 'Futura PT', sans;
+  --primaryColor: #cdb4db;
+  --hibikiGreen: #ffd670;
+  --green: #29cf7f;
+  --sans: $sans;
   --h1: 2rem;
   --h2: 1.8rem;
   --h3: 1.5rem;
@@ -40,7 +40,7 @@
 }
 
 body {
-  font-family: $sansSerif;
+  font-family: $sans;
   color: $black;
   font-size: var(--para);
   margin: 0;
@@ -70,15 +70,19 @@ a {
 }
 
 .main-body {
-  padding: calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 6) 0 0 0;
+}
+
+.section {
   max-width: 450px;
   margin: {
     left: auto;
     right: auto;
   }
+  padding: 0 calc(var(--spacing) * 2) 0 calc(var(--spacing) * 2);
 
   @media (min-width: 768px) {
-    padding: calc(var(--spacing) * 6) calc(var(--spacing) * 2) calc(var(--spacing) * 6) calc(var(--spacing) * 2);
+    padding: 0 calc(var(--spacing) * 2) 0 calc(var(--spacing) * 2);
 
     max-width: 600px;
   }
@@ -117,7 +121,7 @@ a {
   text-decoration: none;
   border: none;
   background: none;
-  font-family: $serif;
+  font-family: $sans;
   padding: 0;
   font-size: 1rem;
   display: inline-block;
@@ -157,4 +161,49 @@ a {
   overflow: visible !important;
   width: auto !important;
   white-space: normal !important;
+}
+
+.hero {
+  background-color: var(--hibikiGreen);
+  height: calc(100vh - (var(--spacing) * 6));
+  display: flex;
+  flex-direction: row;
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+}
+
+.hero-header {
+  color: #fff;
+}
+
+.header-image {
+  max-height: 1200px;
+}
+
+.round-btn {
+  align-items: center;
+  background-color: #45515e;
+  border: 0;
+  border-radius: 1.875em;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.88889em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.25;
+  min-width: 10em;
+  padding: 0.75em 1.875em;
+  text-decoration: none;
+  transition: 0.25s ease;
+  white-space: nowrap;
+}
+
+.round-btn-secondary {
+  background-color: #2c343c;
+  color: #fff;
+}
+
+input[type='text'] {
+  padding: 10px;
 }

@@ -85,7 +85,7 @@ export default () => {
   `
 
   const Footer = styled.footer`
-    padding: var(--spacing) calc(var(--spacing) * 2);
+    padding: calc(var(--spacing) * 3) calc(var(--spacing) * 2) var(--spacing) calc(var(--spacing) * 2);
     display: flex;
     flex-direction: column;
 
@@ -99,7 +99,7 @@ export default () => {
     <Footer>
       <FooterMenu>
         <li>&copy; {showYear}</li>
-        <li>Hibiki Translations</li>
+        <li>Hibiki Publishing</li>
         <ListLink to="/privacy/">Privacy</ListLink>
         <ListLink to="/cookies/">Cookies</ListLink>
       </FooterMenu>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import '../../scss/main.scss'
-import Logo from '../../images/hibiki-logo.svg'
+import Logo from '../../images/hibiki-logo4.svg'
 
 const LocaleSwitcher = styled.div`
   padding: 1rem;
@@ -73,8 +73,7 @@ export default () => {
         flex-direction: column;
         justify-content: center;
         z-index: 3;
-
-        a {
+        height: a {
           display: inline-block;
           line-height: 2.5rem;
           color: var(--black);
@@ -89,10 +88,10 @@ export default () => {
 
         img {
           vertical-align: middle;
-          width: 125px;
+          width: 75;
 
           @media (min-width: 768px) {
-            width: 150px;
+            width: 100px;
           }
         }
 
@@ -148,7 +147,7 @@ export default () => {
         <header className="header-cont">
           <div className="logo-cont">
             <Link to="/">
-              <img src={Logo} alt={'Hibiki translations logo'} />
+              <img src={Logo} alt={'Hibiki Publishing logo'} />
             </Link>
           </div>
           <button className="btn" onClick={() => menuChange(!menuStatus)}>
@@ -157,9 +156,10 @@ export default () => {
           <nav className="nav-cont">
             <ul>
               <ListLink to="/">Home</ListLink>
-              <ListLink to="/about/">About</ListLink>
-              <ListLink to="/journal/">Journal</ListLink>
-              <ListLink to="/contact/">Contact</ListLink>
+              <ListLink to="/about/">Submissions</ListLink>
+              <ListLink to="/journal/">FAQ</ListLink>
+              <ListLink to="/contact/">Catalog</ListLink>
+              <ListLink to="/contact/">About</ListLink>
             </ul>
           </nav>
           <LocaleSwitcher data-name="locale-switcher">
