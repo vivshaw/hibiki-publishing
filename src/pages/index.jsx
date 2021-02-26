@@ -8,7 +8,6 @@ import { LocaleContext } from '../components/Layout'
 const Index = ({ data: { homepage, social, posts, projects }, pageContext: { locale }, location }) => {
   const lang = React.useContext(LocaleContext)
   const i18n = lang.i18n[lang.locale]
-  console.log(homepage)
 
   return (
     <>

@@ -20,6 +20,7 @@ module.exports = {
     projects: 'Projekte',
     allCategories: 'Alle Kategorien',
     entries: 'Einträge',
+    homepage: 'Wilkommen',
   },
   'en-us': {
     path: 'en',
@@ -39,6 +40,7 @@ module.exports = {
     projects: 'projects',
     allCategories: 'All categories',
     entries: 'entries',
+    homepage: 'Welcome',
   },
   'ja-jp': {
     path: 'jp',
@@ -58,5 +60,6 @@ module.exports = {
     projects: 'projects',
     allCategories: 'All categories',
     entries: 'entries',
+    homepage: 'Welcome',
   },
 }

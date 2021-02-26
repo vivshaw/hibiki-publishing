@@ -15,11 +15,11 @@ import i18n from '../../config/i18n'
 import 'typeface-lora'
 import 'typeface-source-sans-pro'
 import { Header } from '.'
-import "../scss/main.scss";
+import '../scss/main.scss'
 
 const LocaleContext = React.createContext()
 
-const Layout = ({ children, pageContext: { locale } }) => {
+const Layout = ({ children, pageContext: { locale }, ...props }) => {
   const data = useStaticQuery(query)
   const footer = data.allPrismicHomepage.edges
     .filter(edge => edge.node.lang === locale)
@@ -31,7 +31,7 @@ const Layout = ({ children, pageContext: { locale } }) => {
       <ThemeProvider theme={theme}>
         <>
           <SkipNavLink />
-          <Header />
+          <Header location={props.location} />
           <main className="main-body">{children}</main>
           <Footer />
         </>

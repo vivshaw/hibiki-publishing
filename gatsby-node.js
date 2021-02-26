@@ -38,6 +38,7 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
+  const pageTemplate = require.resolve('./src/templates/page.jsx')
   const postTemplate = require.resolve('./src/templates/post.jsx')
   const categoryTemplate = require.resolve('./src/templates/category.jsx')
 
@@ -63,12 +64,43 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+        pages: allPrismicPage {
+          edges {
+            node {
+              lang
+              uid
+              id
+              data {
+                title {
+                  text
+                }
+                page_content {
+                  html
+                }
+              }
+            }
+          }
+        }
       }
     `)
   )
 
+  const pagesList = result.data.pages.edges
   const postsList = result.data.posts.edges
   const categoryList = result.data.categories.edges
+
+  pagesList.forEach(edge => {
+    // The uid you assigned in Prismic is the slug!
+    createPage({
+      path: localizedSlug(edge.node),
+      component: pageTemplate,
+      context: {
+        // Pass the unique ID (uid) through context so the template can filter by it
+        uid: edge.node.uid,
+        locale: edge.node.lang,
+      },
+    })
+  })
 
   postsList.forEach(edge => {
     // The uid you assigned in Prismic is the slug!
