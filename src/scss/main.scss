@@ -7,8 +7,8 @@
   --black: $black;
   --charcoal: #3e3e3e;
   --primaryColor: #cdb4db;
-  --hibikiGreen: #ffd670;
-  --green: #29cf7f;
+  --hibikiGreen: #cf338b;
+  --green: #ab58c8;
   --sans: $sans;
   --h1: 2rem;
   --h2: 1.8rem;
@@ -164,7 +164,7 @@ a {
 }
 
 .hero {
-  background-color: var(--hibikiGreen);
+  background: linear-gradient(to right, var(--hibikiGreen), var(--green));
   display: flex;
   flex-direction: row;
   padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4);
@@ -181,11 +181,11 @@ a {
 
 .round-btn {
   align-items: center;
-  background-color: #45515e;
+  background-color: #ffffff;
   border: 0;
   border-radius: 1.875em;
   box-sizing: border-box;
-  color: #fff !important;
+  color: #cf338b !important;
   cursor: pointer;
   display: inline-flex;
   font-size: 0.88889em;

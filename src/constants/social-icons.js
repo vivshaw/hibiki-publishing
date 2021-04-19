@@ -3,13 +3,8 @@ import { FaTwitter, FaLinkedin } from 'react-icons/fa'
 
 export default [
   {
-    icon: <FaLinkedin />,
-    url: 'LinkedIn goes here',
-    name: 'LinkedIn',
-  },
-  {
     icon: <FaTwitter />,
-    url: 'Twitter goes here',
+    url: 'https://twitter.com/hibikipub',
     name: 'Twitter',
   },
 ]

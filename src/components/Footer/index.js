@@ -100,8 +100,7 @@ export default () => {
       <FooterMenu>
         <li>&copy; {showYear}</li>
         <li>Hibiki Publishing</li>
-        <ListLink to="/privacy/">Privacy</ListLink>
-        <ListLink to="/cookies/">Cookies</ListLink>
+        <ListLink to="/impressum/">Impressum</ListLink>
       </FooterMenu>
       <FooterSocial>
         {socials.map((item, index) => {

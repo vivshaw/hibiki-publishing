@@ -5,17 +5,17 @@ module.exports = {
   description: 'A manga translation group.',
   headline: 'Translating manga', // Headline for schema.org JSONLD
   url: 'https://upbeat-wiles-8d0507.netlify.app/', // Domain of your site. No trailing slash!
-  logo: '/logos/logo-1024.png', // Used for SEO
+  logo: '/logos/hibiki-logo.png', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest
   favicon: 'src/favicon.png', // Used for manifest favicon generation
   shortName: 'Hibiki', // shortname for manifest. MUST be shorter than 12 characters
   author: 'Hibiki Translations', // Author for schemaORGJSONLD
-  themeColor: '#3D63AE',
-  backgroundColor: '#EBEDF2',
+  themeColor: '#cf338b',
+  backgroundColor: '#ab58c8',
 
-  twitter: '', // Twitter Username
+  twitter: '@hibikipub', // Twitter Username
   facebook: '', // Facebook Site Name
   googleAnalyticsID: 'UA-X',
 

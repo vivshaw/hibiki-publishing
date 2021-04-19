@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import '../../scss/main.scss'
-import Logo from '../../images/hibiki-logo4.svg'
+import Logo from '../../images/hibiki-logo.svg'
 import { LocaleContext } from '../Layout'
 import LocalizedLink from '../LocalizedLink'
 

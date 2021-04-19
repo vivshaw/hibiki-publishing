@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
-import headerIllustration from '../images/build.webp'
 import { LocaleContext } from '../components/Layout'
 import LocalizedLink from '../components/LocalizedLink'
 
