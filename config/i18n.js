@@ -9,8 +9,8 @@ module.exports = {
     ogLang: 'de_DE',
     defaultTitle: website.title,
     defaultTitleAlt: website.titleAlt,
-    defaultDescription: 'Basierend auf gatsby-starter-prismic mit Unterstützung für Lokalisierung (i18n)',
-    headline: 'Schreiben und Veröffentlichen für LekoArts',
+    defaultDescription: '',
+    headline: '',
     category: 'Kategorie',
     categories: 'Kategorien',
     was: 'wurde',
@@ -60,6 +60,6 @@ module.exports = {
     projects: 'projects',
     allCategories: 'All categories',
     entries: 'entries',
-    homepage: 'Welcome',
+    homepage: 'Home',
   },
 }

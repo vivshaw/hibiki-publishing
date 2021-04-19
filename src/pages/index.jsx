@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
 import headerIllustration from '../images/build.webp'
 import { LocaleContext } from '../components/Layout'
+import LocalizedLink from '../components/LocalizedLink'
 
 const Index = ({ data: { homepage, social, posts, projects }, pageContext: { locale }, location }) => {
   const lang = React.useContext(LocaleContext)
@@ -15,14 +16,11 @@ const Index = ({ data: { homepage, social, posts, projects }, pageContext: { loc
 
       <section className="hero">
         <div>
-          <img src={headerIllustration} alt="Header illustration" class="header-image" />
-        </div>
-        <div>
           <h1 className="hero-header">{homepage.data.title.text}</h1>
           <h4 className="hero-header">{homepage.data.subheader.text}</h4>
-          <a href="#" class="round-btn">
+          <LocalizedLink to={'/submissions'} class="round-btn">
             Learn more
-          </a>
+          </LocalizedLink>
         </div>
       </section>
 

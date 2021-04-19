@@ -165,7 +165,6 @@ a {
 
 .hero {
   background-color: var(--hibikiGreen);
-  height: calc(100vh - (var(--spacing) * 6));
   display: flex;
   flex-direction: row;
   padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4);
@@ -186,7 +185,7 @@ a {
   border: 0;
   border-radius: 1.875em;
   box-sizing: border-box;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   display: inline-flex;
   font-size: 0.88889em;
