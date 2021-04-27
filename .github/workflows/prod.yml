@@ -15,6 +15,9 @@ jobs:
       - name: Install npm dependencies
         run: npm install
       - name: Run build task
+        env:
+          TYPEKIT_ID: ${{ secrets.TYPEKIT_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: npm run build --if-present
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.5
