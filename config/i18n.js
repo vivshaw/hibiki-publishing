@@ -21,6 +21,9 @@ module.exports = {
     allCategories: 'Alle Kategorien',
     entries: 'Einträge',
     homepage: 'Wilkommen',
+    impressum: 'Impressum',
+    learnMore: 'Finde mehr heraus',
+    whatWeDo: 'Was wir bieten',
   },
   'en-us': {
     path: 'en',
@@ -41,6 +44,9 @@ module.exports = {
     allCategories: 'All categories',
     entries: 'entries',
     homepage: 'Welcome',
+    impressum: 'Legal Notice',
+    learnMore: 'Learn more',
+    whatWeDo: 'What we do',
   },
   'ja-jp': {
     path: 'jp',
@@ -60,6 +66,9 @@ module.exports = {
     projects: 'projects',
     allCategories: 'All categories',
     entries: 'entries',
-    homepage: 'Home',
+    homepage: 'ホーム',
+    impressum: 'Legal Notice',
+    learnMore: ' 詳しくはこちら',
+    whatWeDo: '弊社について',
   },
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { Link } from 'gatsby'
 import socials from '../../constants/social-icons'
+import { LocaleContext } from '../Layout'
+import LocalizedLink from '../LocalizedLink'
 
 export default () => {
+  const lang = React.useContext(LocaleContext)
+  const i18n = lang.i18n[lang.locale]
+
   const ListLink = props => (
     <li className="nav-link">
-      <Link to={props.to}>{props.children}</Link>
+      <LocalizedLink to={props.to}>{props.children}</LocalizedLink>
     </li>
   )
 
@@ -100,7 +104,7 @@ export default () => {
       <FooterMenu>
         <li>&copy; {showYear}</li>
         <li>Hibiki Publishing</li>
-        <ListLink to="/impressum/">Impressum</ListLink>
+        <ListLink to="/impressum">{i18n.impressum}</ListLink>
       </FooterMenu>
       <FooterSocial>
         {socials.map((item, index) => {

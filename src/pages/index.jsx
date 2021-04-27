@@ -17,14 +17,14 @@ const Index = ({ data: { homepage, social, posts, projects }, pageContext: { loc
         <div>
           <h1 className="hero-header">{homepage.data.title.text}</h1>
           <h4 className="hero-header">{homepage.data.subheader.text}</h4>
-          <LocalizedLink to={'/submissions'} class="round-btn">
-            Learn more
+          <LocalizedLink to={'/faq'} class="round-btn">
+            {i18n.learnMore}
           </LocalizedLink>
         </div>
       </section>
 
       <section className="section">
-        <h4>What We Do</h4>
+        <h4>{i18n.whatWeDo}</h4>
         <div dangerouslySetInnerHTML={{ __html: homepage.data.content.html }} />
       </section>
 

@@ -206,7 +206,7 @@ export default ({ location }) => {
             </LocalizedLink>{' '}
             /{' '}
             <LocalizedLink forceLocale="ja-jp" to={localeSwitcherUrl}>
-              日本
+              日本語
             </LocalizedLink>
           </LocaleSwitcher>
         </header>
