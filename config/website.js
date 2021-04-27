@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  title: 'Hibiki Translations', // Navigation and Site Title
-  titleAlt: 'Hibiki Translations', // Title for JSONLD
-  description: 'A manga translation group.',
-  headline: 'Translating manga', // Headline for schema.org JSONLD
+  title: 'Hibiki Publishing', // Navigation and Site Title
+  titleAlt: 'Hibiki Publishing', // Title for JSONLD
+  description: 'A small publisher of LGBTQIA+ manga. Publishing in English and German.',
+  headline: 'A small publisher of LGBTQIA+ manga. Publishing in English and German.', // Headline for schema.org JSONLD
   url: 'https://www.hibiki-publishing.com', // Domain of your site. No trailing slash!
   logo: '/logos/hibiki-logo.png', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
@@ -12,7 +12,7 @@ module.exports = {
   // TODO: Need a better, square favicon
   favicon: 'src/images/favicon.png', // Used for manifest favicon generation
   shortName: 'Hibiki', // shortname for manifest. MUST be shorter than 12 characters
-  author: 'Hibiki Translations', // Author for schemaORGJSONLD
+  author: 'Hibiki Publishing', // Author for schemaORGJSONLD
   themeColor: '#cf338b',
   backgroundColor: '#ab58c8',
 

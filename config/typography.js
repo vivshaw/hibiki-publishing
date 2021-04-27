@@ -4,7 +4,7 @@ import Typography from 'typography'
 // The scaleRatio is overwritten for smaller breakpoints in src/components/Layout
 
 const typography = new Typography({
-  title: 'Hibiki Translations',
+  title: 'Hibiki Publishing',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [

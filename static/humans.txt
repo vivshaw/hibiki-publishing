@@ -1,0 +1,25 @@
+ __  __     __     ______     __     __  __     __    
+/\ \_\ \   /\ \   /\  == \   /\ \   /\ \/ /    /\ \   
+\ \  __ \  \ \ \  \ \  __<   \ \ \  \ \  _"-.  \ \ \  
+ \ \_\ \_\  \ \_\  \ \_____\  \ \_\  \ \_\ \_\  \ \_\ 
+  \/_/\/_/   \/_/   \/_____/   \/_/   \/_/\/_/   \/_/ 
+
+
+/* TEAM */                            
+Hibiki Publishing. A small independent publisher of LGBTQIA+ manga. Publishing in English and German.                
+Site: https://www.hibiki-publishing.com/   
+Twitter: @hibikipub
+Location: Heiligkreuzsteinach, DE.
+
+/* DEV */
+vivshaw
+Site: vivshaw.github.io
+Twitter: @vvvivshaw
+
+/* THANKS */
+You!
+
+/* SITE */
+Last update: 2021
+Standards: HTML5, CSS3, ES6
+Powered by Gatsby!
