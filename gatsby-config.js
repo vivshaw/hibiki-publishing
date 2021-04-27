@@ -2,8 +2,8 @@ require('dotenv').config({
   path: `.env`,
 })
 
-const prismicHtmlSerializer = require('./src/gatsby/htmlSerializer')
-const prismicLinkResolver = require('./src/gatsby/linkResolver')
+const prismicHtmlSerializer = require('./src/utils/prismic/htmlSerializer')
+const prismicLinkResolver = require('./src/utils/prismic/linkResolver')
 
 const website = require('./config/website')
 

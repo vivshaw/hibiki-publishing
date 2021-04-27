@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import socials from '../../constants/social-icons'
+import socials from '../../utils/social-icons'
 import { LocaleContext } from '../Layout'
 import LocalizedLink from '../LocalizedLink'
 
