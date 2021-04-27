@@ -1,7 +1,7 @@
 import Typography from 'typography'
 
-// This website uses the system font stack after the placed "Lora" font
-// The scaleRatio will be overwritten for smaller breakpoints in src/components/Layout
+// We use Futura PT, but back it up with the system font stack.
+// The scaleRatio is overwritten for smaller breakpoints in src/components/Layout
 
 const typography = new Typography({
   title: 'Hibiki Translations',
