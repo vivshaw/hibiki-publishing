@@ -20,4 +20,6 @@ module.exports = {
   googleAnalyticsID: 'UA-X',
 
   skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
+
+  contactEmail: 'contact@hibiki-publishing.com',
 }
