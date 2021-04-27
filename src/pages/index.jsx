@@ -28,12 +28,17 @@ const Index = ({ data: { homepage, social, posts, projects }, pageContext: { loc
         <div dangerouslySetInnerHTML={{ __html: homepage.data.content.html }} />
       </section>
 
+      {/*
+      TODO: Get email signup list working
       <section className="section">
         <h4>{homepage.data.email_cta.text}</h4>
         <input type="text" placeholder="Email" />
       </section>
+      */}
 
-      {/*<div>
+      {/*
+      TODO: Figure out what to do with this
+      <div>
         {social.edges[0].node.data.body.map((s, index) => (
           <li data-name={`social-entry-${index}`} key={s.primary.label.text}>
             <a href={s.primary.link.url}>{s.primary.label.text}</a>
@@ -55,7 +60,8 @@ const Index = ({ data: { homepage, social, posts, projects }, pageContext: { loc
             </li>
           ))}
         </div>
-          </div>*/}
+          </div>
+        */}
     </>
   )
 }
