@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import socials from '../../utils/social-icons'
 import { LocaleContext } from '../Layout'
 import LocalizedLink from '../LocalizedLink'
+import Impressum from '../../pages/impressum'
 
 export default () => {
   const lang = React.useContext(LocaleContext)
@@ -104,7 +105,8 @@ export default () => {
       <FooterMenu>
         <li>&copy; {showYear}</li>
         <li>Hibiki Publishing</li>
-        <ListLink to="/impressum">{i18n.impressum}</ListLink>
+        {/* TODO: Fix this so it renders properly on 404. After localizing 404. */}
+        <ListLink to="/impressum">{i18n ? i18n.impressum : 'Impressum'}</ListLink>
       </FooterMenu>
       <FooterSocial>
         {socials.map((item, index) => {

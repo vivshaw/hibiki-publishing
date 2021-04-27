@@ -4,11 +4,12 @@ module.exports = {
   titleAlt: 'Hibiki Translations', // Title for JSONLD
   description: 'A manga translation group.',
   headline: 'Translating manga', // Headline for schema.org JSONLD
-  url: 'https://upbeat-wiles-8d0507.netlify.app/', // Domain of your site. No trailing slash!
+  url: 'https://www.hibiki-publishing.com', // Domain of your site. No trailing slash!
   logo: '/logos/hibiki-logo.png', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest
+  // TODO: Need a better, square favicon
   favicon: 'src/images/favicon.png', // Used for manifest favicon generation
   shortName: 'Hibiki', // shortname for manifest. MUST be shorter than 12 characters
   author: 'Hibiki Translations', // Author for schemaORGJSONLD
