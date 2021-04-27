@@ -28,4 +28,3 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: 'html/'
-          RSYNC_PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
